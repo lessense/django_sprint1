@@ -11,4 +11,4 @@ urlpatterns = [
         views.category_posts,
         name='category_posts'
     ),
-] 
+]
