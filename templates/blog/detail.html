@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}{{ post.location }}{% endblock %}
+{% block content %}
+<h1>Место: {{ post.location }}</h1>
+<p>Дата: {{ post.date }}</p>
+<p>Категория: {{ post.category }}</p>
+<p>{{ post.text }}</p>
+{% endblock %}
