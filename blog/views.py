@@ -44,13 +44,12 @@ posts = [
     },
 ]
 
-# Словарь для быстрого поиска по id
 posts_dict = {post['id']: post for post in posts}
 
 
 def index(request):
     template = 'blog/index.html'
-    context = {'posts': posts[::-1]}
+    context = {'posts': posts[::-1]}  # Перевернутый список
     return render(request, template, context)
 
 

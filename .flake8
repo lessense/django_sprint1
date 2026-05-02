@@ -15,3 +15,6 @@ exclude =
     env/
 per-file-ignores =
   settings.py:E501
+ 
+[flake8] 
+ignore = W391 
